@@ -1,0 +1,23 @@
+[
+	{
+	"type":"email",
+	"name":"email",
+	"value":"",
+	"placeholder":"enter email address",
+	"required":true
+	},
+	{
+	"type":"password",
+	"name":"password",
+	"value":"",
+	"placeholder":"enter password",
+	"required":true
+	},
+	{
+	"type":"text",
+	"name":"firstname",
+	"value":"",
+	"placeholder":"enter first name",
+	"required":true
+	}
+]

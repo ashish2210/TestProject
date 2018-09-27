@@ -1,0 +1,52 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div style="text-align:center">
+  <div>
+    <form>
+      Dynamically generated Form
+      <div *ngFor="let input of inputfield">
+        <label [for]="input.name">{{input.name}}</label>
+        <input [type]="input.type"
+        [name]="input.name"
+        [(ngModel)] = "input.value"
+        [placeholder]="input.placeholder">
+
+      </div>
+      <br/>
+      <br/>
+      <button type="submit" (click)="send()">Submit</button>
+    </form>
+  </div>
+  <div>
+    
+      <ng-container>
+          <p>
+              <label id="lblEmailName">
+                  {{emailName}}
+              </label>
+          </p>
+          <p>
+              <label id="lblPassword">
+                  {{PasswordValue}}
+              </label>
+          </p>
+          <p>
+              <label id="lblFirstName">
+                  {{FirstNameValue}}
+              </label>
+          </p>
+      </ng-container>
+    
+    <!--
+    <ng-container>
+        <div *ngFor="let input of FormValue">
+            <label>{{input.value}}</label>
+          </div>
+    </ng-container>
+  -->
+  </div>
+</div>
