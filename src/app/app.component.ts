@@ -26,20 +26,8 @@ export class AppComponent implements OnInit {
 
 constructor(private httpService: HttpClient){
   console.log("Constructor Called");
-  /*
-  http.get('./assets/formdata.jason')
-      .map((res: Response) => res.json())
-      .subscribe((departments: Array<any>) => this.departments = departments);
-      */
 }
-/*
-public getJSON(): Observable<any> {
-  return this.http.get("./file.json")
-                  .map((res:any) => res.json())
-                  .catch((error:any) => console.log(error));
 
-}
-**/
 ngOnInit(){
 
 console.log("Json schema initialized");
